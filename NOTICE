@@ -1,0 +1,9 @@
+Unofficial Intervals.icu community integration. Not affiliated with or endorsed by Intervals.icu, Garmin, Strava, or OpenAI.
+
+Runtime dependency: intervals-icu-mcp 5.4.0, https://github.com/hhopke/intervals-icu-mcp
+Upstream MIT copyright notices:
+Copyright (c) 2025 Edd Mann
+Copyright (c) 2026 Heiko Hopke Kromminga
+
+Upstream code is installed as a pinned dependency, not copied into this project. Its distribution retains its own MIT license. Intervals.icu data use remains subject to its API terms and relevant source attribution requirements.
+

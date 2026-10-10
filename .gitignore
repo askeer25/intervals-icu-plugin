@@ -1,0 +1,13 @@
+.venv/
+.cache/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+.env
+.env.*
+dist/
+build/
+*.egg-info/
+local-validation.json
+

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "intervals-icu",
+  "version": "1.1.0",
+  "description": "Unofficial local Intervals.icu integration: training analysis, recovery, and previewed workout planning.",
+  "license": "MIT",
+  "author": {"name": "askeer25", "url": "https://github.com/askeer25"},
+  "homepage": "https://github.com/askeer25/intervals-icu-plugin",
+  "repository": "https://github.com/askeer25/intervals-icu-plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Intervals.icu",
+        "shortDescription": "Analyze training and preview workout plans",
+        "longDescription": "Personal-account training workflows running locally. Uses your own API key; deletion is disabled. Unofficial integration based on intervals-icu-mcp.",
+        "category": "Productivity",
+        "developerName": "askeer25",
+        "websiteURL": "https://github.com/askeer25/intervals-icu-plugin",
+        "capabilities": ["Read", "Write"]
+      }
+    }
+  }
+}

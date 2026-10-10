@@ -1,0 +1,53 @@
+[project]
+name = "intervals-icu-plugin"
+version = "1.1.0"
+description = "Unofficial portable Intervals.icu plugin with reliable personal training workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "askeer25"}]
+dependencies = [
+  "intervals-icu-mcp==5.4.0",
+  "fastmcp==3.2.4",
+  "httpx==0.28.1",
+  "keyring==25.7.0",
+  "platformdirs>=4,<5",
+  "tzdata>=2025.2",
+  "filelock>=3.18,<4",
+]
+
+[project.scripts]
+intervals-icu-plugin = "intervals_icu_plugin.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/askeer25/intervals-icu-plugin"
+Repository = "https://github.com/askeer25/intervals-icu-plugin"
+Issues = "https://github.com/askeer25/intervals-icu-plugin/issues"
+
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/intervals_icu_plugin"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "respx>=0.22,<0.23", "ruff>=0.14,<1", "pyright>=1.1,<2", "jsonschema>=4,<5"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.11"
+typeCheckingMode = "basic"
+
